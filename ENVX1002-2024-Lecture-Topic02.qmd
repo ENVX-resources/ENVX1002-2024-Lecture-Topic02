@@ -177,14 +177,14 @@ ggplot(normal_dist, aes(x = x, y = y)) +
 
 $\Sigma_{i=1}^n=x_1+x_2+x_3+...+x_n$
 
-![](images/L2_Rlogo.jpg) - `sum(c(48, 56, 78, 86, 90, 271))`
+![](images/R_logo.jpg) - `sum(c(48, 56, 78, 86, 90, 271))`
 
 ```{r}
 total_c <- sum(c(48, 56, 78, 86, 90, 271))
 print(total_c)
 ```
 
-![](images/L2_Excellogo.jpg) - `=SUM(A1:A6)`
+![](images/Excel_logo.jpg) - `=SUM(A1:A6)`
 
 
 
@@ -201,14 +201,14 @@ $\mu = \frac{\sum_{i=1}^{N} y_i}{N}$
 
 $\overline{y} = \frac{\sum_{i=1}^{n} y_i}{n}$
 
-![](images/L2_Rlogo.jpg) - `mean(c(48, 56, 78, 86, 90, 271))`
+![](images/R_logo.jpg) - `mean(c(48, 56, 78, 86, 90, 271))`
 
 ```{r}
 mean_c <- mean(c(48, 56, 78, 86, 90, 271))
 print(mean_c)
 ```
 
-![](images/L2_Excellogo.jpg) - `=AVERAGE(A1:A6)`
+![](images/Excel_logo.jpg) - `=AVERAGE(A1:A6)`
 
 
 
@@ -225,14 +225,14 @@ Population median: $M=\left(\frac{N+1}{2}\right)th$ sorted value
 Sample median: $\tilde{y}=\left(\frac{n+1}{2}\right)th$ sorted value
 
 
-![](images/L2_Rlogo.jpg) - `median(c(48, 56, 78, 86, 90, 271))`
+![](images/R_logo.jpg) - `median(c(48, 56, 78, 86, 90, 271))`
 
 ```{r}
 median_c <- median(c(48, 56, 78, 86, 90, 271))
 print(median_c)
 ```
 
-![](images/L2_Excellogo.jpg) - `=MEDIAN(A1:A6)`
+![](images/Excel_logo.jpg) - `=MEDIAN(A1:A6)`
 
 
 
@@ -244,7 +244,7 @@ print(median_c)
 Mode is the most commonly occurring number in a set of observations
 
 
-![](images/L2_Rlogo.jpg) - 
+![](images/R_logo.jpg) - 
 
 ```{r}
 mode_function <- function(x) {
@@ -257,7 +257,7 @@ print(mode_value)
 ```
 
 
-![](images/L2_Excellogo.jpg) - `=MODE.SNGL(A1:A7)`
+![](images/Excel_logo.jpg) - `=MODE.SNGL(A1:A7)`
 
 
 
@@ -269,14 +269,14 @@ print(mode_value)
 - Difference between largest and smallest observations in a group of data
 - Note that we also refer to spread as measures of dispersion
 
-![](images/L2_Rlogo.jpg) - `max(c(48, 56, 78, 86, 90, 271)) - min(c(48, 56, 78, 86, 90, 271))`
+![](images/R_logo.jpg) - `max(c(48, 56, 78, 86, 90, 271)) - min(c(48, 56, 78, 86, 90, 271))`
 
 ```{r}
 range_c <- max(c(48, 56, 78, 86, 90, 271)) - min(c(48, 56, 78, 86, 90, 271))
 print(range_c)
 ```
 
-![](images/L2_Excellogo.jpg) - `=MAX(A1:A6) - MAX(A1:A6)`
+![](images/Excel_logo.jpg) - `=MAX(A1:A6) - MAX(A1:A6)`
 
 
 
@@ -320,7 +320,7 @@ quantile(c(1,2,3,4,5,6,7,8,9))
 
 **Quartiles**
 
-![](images/L2_Rlogo.jpg) - `quantile(c(48, 56, 78, 86, 90, 271))`
+![](images/R_logo.jpg) - `quantile(c(48, 56, 78, 86, 90, 271))`
 
 ```{r}
 quant_c <- quantile(c(48, 56, 78, 86, 90, 271))
@@ -328,7 +328,7 @@ print(quant_c)
 ```
 
 
-![](images/L2_Excellogo.jpg) - `=QUARTILE.INC(A1:A6, 1)` - first quartile
+![](images/Excel_logo.jpg) - `=QUARTILE.INC(A1:A6, 1)` - first quartile
 
 
 
@@ -338,7 +338,7 @@ print(quant_c)
 
 **IQR**
 
-![](images/L2_Rlogo.jpg) - `IQR(c(48, 56, 78, 86, 90, 271))`
+![](images/R_logo.jpg) - `IQR(c(48, 56, 78, 86, 90, 271))`
 
 ```{r}
 iqr_c <- IQR(c(48, 56, 78, 86, 90, 271))
@@ -346,7 +346,7 @@ print(iqr_c)
 ```
 
 
-![](images/L2_Excellogo.jpg) - `=QUARTILE.INC(A1:A6, 3)-QUARTILE.INC(A1:A6, 1)` - third quartile - first quartile
+![](images/Excel_logo.jpg) - `=QUARTILE.INC(A1:A6, 3)-QUARTILE.INC(A1:A6, 1)` - third quartile - first quartile
 
 
 
@@ -360,14 +360,14 @@ Population variance: $\sigma^2 = \frac{\sum_{i=1}^{N}(y_i - \mu)^2}{N}$
 
 Sample variance: $\s^2 = \frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n}$
 
-![](images/L2_Rlogo.jpg) - `var(c(48, 56, 78, 86, 90, 271))`
+![](images/R_logo.jpg) - `var(c(48, 56, 78, 86, 90, 271))`
 
 ```{r}
 var_c <- var(c(48, 56, 78, 86, 90, 271))
 print(var_c)
 ```
 
-![](images/L2_Excellogo.jpg) - `=VAR.S(A1:A6)`
+![](images/Excel_logo.jpg) - `=VAR.S(A1:A6)`
 
 
 
@@ -395,14 +395,14 @@ Sample variance: $s^2 = \sqrt{\frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n-1}}$
 - R's sd function always calculates the sample standard deviation
 - The denominator of sample standard is n−1 (Bessel's correction) this is an important concept in statistics. A key property is that it gives a more accurate estimate of the population variance and standard deviation when working with a sample. 
 
-![](images/L2_Rlogo.jpg) - `sd(c(48, 56, 78, 86, 90, 271))`
+![](images/R_logo.jpg) - `sd(c(48, 56, 78, 86, 90, 271))`
 
 ```{r}
 sd_c <- sd(c(48, 56, 78, 86, 90, 271))
 print(sd_c)
 ```
 
-![](images/L2_Excellogo.jpg) - `=STDEV.S(A1:A6)`
+![](images/Excel_logo.jpg) - `=STDEV.S(A1:A6)`
 
 
 
@@ -426,7 +426,7 @@ $CV=\left(\frac{s}{\overline{y}}\right)\times{100}$
 
 - Looking at the calculations below, which is more variable, Carbon or Nitrogen?
 
-![](images/L2_Rlogo.jpg) - `sd(c(48, 56, 78, 86, 90, 271))`
+![](images/R_logo.jpg) - `sd(c(48, 56, 78, 86, 90, 271))`
 
 ```{r}
 cv_c <- sd(c(48, 56, 78, 86, 90, 271))/mean(c(48, 56, 78, 86, 90, 271))*100
@@ -436,7 +436,7 @@ cv_n <- sd(c(2, 16, 22, 45, 65, 93))/mean(c(2, 16, 22, 45, 65, 93))*100
 print(cv_n)
 ```
 
-![](images/L2_Excellogo.jpg) - `=(STDEV.S(A1:A6)/AVERAGE(A1:A6))*100`
+![](images/Excel_logo.jpg) - `=(STDEV.S(A1:A6)/AVERAGE(A1:A6))*100`
 
 
 
