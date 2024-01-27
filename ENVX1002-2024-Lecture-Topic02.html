@@ -8,7 +8,7 @@
 <link href="ENVX1002-2024-Lecture-Topic02_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="ENVX1002-2024-Lecture-Topic02_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="ENVX1002-2024-Lecture-Topic02_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.3.450">
+  <meta name="generator" content="quarto-1.3.353">
 
   <meta name="author" content="Dr.&nbsp;Floris van Ogtrop">
   <title>Topic 2 – Exploratory Data Analysis (EDA)</title>
@@ -815,6 +815,8 @@ Dr.&nbsp;Floris van Ogtrop
 <li>Example: 48, 56, 8, 86, 90, 271</li>
 </ul></li>
 </ul>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p>mean - <span class="math inline">\overline{y}</span>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="fu">mean</span>(<span class="fu">c</span>(<span class="dv">48</span>, <span class="dv">56</span>, <span class="dv">8</span>, <span class="dv">86</span>, <span class="dv">90</span>, <span class="dv">27</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -826,6 +828,7 @@ Dr.&nbsp;Floris van Ogtrop
 <pre><code>[1] 93.16667</code></pre>
 </div>
 </div>
+</div><div class="column" style="width:50%;">
 <p>median - <span class="math inline">\tilde{y}</span>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="fu">median</span>(<span class="fu">c</span>(<span class="dv">48</span>, <span class="dv">56</span>, <span class="dv">8</span>, <span class="dv">86</span>, <span class="dv">90</span>, <span class="dv">27</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -835,6 +838,8 @@ Dr.&nbsp;Floris van Ogtrop
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">median</span>(<span class="fu">c</span>(<span class="dv">48</span>, <span class="dv">56</span>, <span class="dv">8</span>, <span class="dv">86</span>, <span class="dv">90</span>, <span class="dv">271</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 71</code></pre>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -848,6 +853,8 @@ Dr.&nbsp;Floris van Ogtrop
 <li>Example: 48, 56, 8, 86, 90, 271</li>
 </ul></li>
 </ul>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p>variance - <span class="math inline">s</span>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a><span class="fu">var</span>(<span class="fu">c</span>(<span class="dv">48</span>, <span class="dv">56</span>, <span class="dv">8</span>, <span class="dv">86</span>, <span class="dv">90</span>, <span class="dv">27</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -859,6 +866,7 @@ Dr.&nbsp;Floris van Ogtrop
 <pre><code>[1] 8472.167</code></pre>
 </div>
 </div>
+</div><div class="column" style="width:50%;">
 <p>Inter quartile range - <span class="math inline">IQR</span>:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">IQR</span>(<span class="fu">c</span>(<span class="dv">48</span>, <span class="dv">56</span>, <span class="dv">8</span>, <span class="dv">86</span>, <span class="dv">90</span>, <span class="dv">27</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -868,6 +876,8 @@ Dr.&nbsp;Floris van Ogtrop
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a><span class="fu">IQR</span>(<span class="fu">c</span>(<span class="dv">48</span>, <span class="dv">56</span>, <span class="dv">8</span>, <span class="dv">86</span>, <span class="dv">90</span>, <span class="dv">271</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 39</code></pre>
+</div>
+</div>
 </div>
 </div>
 </section>
@@ -935,6 +945,8 @@ Dr.&nbsp;Floris van Ogtrop
 <section>
 <section id="bar-chart-1" class="title-slide slide level1 center">
 <h1>Bar chart</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>We then plot the table in ggplot</li>
 </ul>
@@ -946,40 +958,48 @@ Dr.&nbsp;Floris van Ogtrop
 <span id="cb44-5"><a href="#cb44-5"></a><span class="fu">names</span>(disease_df) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Disease"</span>, <span class="st">"Frequency"</span>)</span>
 <span id="cb44-6"><a href="#cb44-6"></a></span>
 <span id="cb44-7"><a href="#cb44-7"></a><span class="co"># Create the bar plot</span></span>
-<span id="cb44-8"><a href="#cb44-8"></a><span class="fu">ggplot</span>(disease_df, <span class="fu">aes</span>(<span class="at">x =</span> Disease, <span class="at">y =</span> Frequency)) <span class="sc">+</span></span>
+<span id="cb44-8"><a href="#cb44-8"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(disease_df, <span class="fu">aes</span>(<span class="at">x =</span> Disease, <span class="at">y =</span> Frequency)) <span class="sc">+</span></span>
 <span id="cb44-9"><a href="#cb44-9"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
 <span id="cb44-10"><a href="#cb44-10"></a>  <span class="fu">ggtitle</span>(<span class="st">"Frequency of Disease Categories"</span>) <span class="sc">+</span></span>
 <span id="cb44-11"><a href="#cb44-11"></a>  <span class="fu">xlab</span>(<span class="st">"Disease Category"</span>) <span class="sc">+</span></span>
 <span id="cb44-12"><a href="#cb44-12"></a>  <span class="fu">ylab</span>(<span class="st">"Frequency"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
 </div>
-<img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"></section>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">print</span>(p)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-19-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="bar-chart-2" class="slide level2">
 <h2>Bar chart</h2>
 <ul>
 <li>Using <code>tidyverse</code></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="co"># Load necessary libraries</span></span>
-<span id="cb45-2"><a href="#cb45-2"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb45-3"><a href="#cb45-3"></a></span>
-<span id="cb45-4"><a href="#cb45-4"></a><span class="co"># Your disease data</span></span>
-<span id="cb45-5"><a href="#cb45-5"></a>disease <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"None"</span>, <span class="st">"Moderate"</span>, <span class="st">"None"</span>, <span class="st">"Severe"</span>, <span class="st">"Moderate"</span>, <span class="st">"Moderate"</span>, <span class="st">"Severe"</span>, <span class="st">"Moderate"</span>, <span class="st">"None"</span>, <span class="st">"Moderate"</span>)</span>
-<span id="cb45-6"><a href="#cb45-6"></a></span>
-<span id="cb45-7"><a href="#cb45-7"></a><span class="co"># Convert to tibble and count occurrences</span></span>
-<span id="cb45-8"><a href="#cb45-8"></a>disease_data <span class="ot">&lt;-</span> <span class="fu">tibble</span>(disease) <span class="sc">%&gt;%</span></span>
-<span id="cb45-9"><a href="#cb45-9"></a>  <span class="fu">mutate</span>(<span class="at">disease =</span> <span class="fu">factor</span>(disease, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"None"</span>, <span class="st">"Moderate"</span>, <span class="st">"Severe"</span>))) <span class="sc">%&gt;%</span></span>
-<span id="cb45-10"><a href="#cb45-10"></a>  <span class="fu">count</span>(disease, <span class="at">name =</span> <span class="st">"Frequency"</span>)</span>
-<span id="cb45-11"><a href="#cb45-11"></a></span>
-<span id="cb45-12"><a href="#cb45-12"></a><span class="co"># Create the bar plot</span></span>
-<span id="cb45-13"><a href="#cb45-13"></a><span class="fu">ggplot</span>(disease_data, <span class="fu">aes</span>(<span class="at">x =</span> disease, <span class="at">y =</span> Frequency)) <span class="sc">+</span></span>
-<span id="cb45-14"><a href="#cb45-14"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
-<span id="cb45-15"><a href="#cb45-15"></a>  <span class="fu">ggtitle</span>(<span class="st">"Frequency of Disease Categories"</span>) <span class="sc">+</span></span>
-<span id="cb45-16"><a href="#cb45-16"></a>  <span class="fu">xlab</span>(<span class="st">"Disease Category"</span>) <span class="sc">+</span></span>
-<span id="cb45-17"><a href="#cb45-17"></a>  <span class="fu">ylab</span>(<span class="st">"Frequency"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1"></a><span class="co"># Load necessary libraries</span></span>
+<span id="cb46-2"><a href="#cb46-2"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb46-3"><a href="#cb46-3"></a></span>
+<span id="cb46-4"><a href="#cb46-4"></a><span class="co"># Your disease data</span></span>
+<span id="cb46-5"><a href="#cb46-5"></a>disease <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"None"</span>, <span class="st">"Moderate"</span>, <span class="st">"None"</span>, <span class="st">"Severe"</span>, <span class="st">"Moderate"</span>, <span class="st">"Moderate"</span>, <span class="st">"Severe"</span>, <span class="st">"Moderate"</span>, <span class="st">"None"</span>, <span class="st">"Moderate"</span>)</span>
+<span id="cb46-6"><a href="#cb46-6"></a></span>
+<span id="cb46-7"><a href="#cb46-7"></a><span class="co"># Convert to tibble and count occurrences</span></span>
+<span id="cb46-8"><a href="#cb46-8"></a>disease_data <span class="ot">&lt;-</span> <span class="fu">tibble</span>(disease) <span class="sc">%&gt;%</span></span>
+<span id="cb46-9"><a href="#cb46-9"></a>  <span class="fu">mutate</span>(<span class="at">disease =</span> <span class="fu">factor</span>(disease, <span class="at">levels =</span> <span class="fu">c</span>(<span class="st">"None"</span>, <span class="st">"Moderate"</span>, <span class="st">"Severe"</span>))) <span class="sc">%&gt;%</span></span>
+<span id="cb46-10"><a href="#cb46-10"></a>  <span class="fu">count</span>(disease, <span class="at">name =</span> <span class="st">"Frequency"</span>)</span>
+<span id="cb46-11"><a href="#cb46-11"></a></span>
+<span id="cb46-12"><a href="#cb46-12"></a><span class="co"># Create the bar plot</span></span>
+<span id="cb46-13"><a href="#cb46-13"></a><span class="fu">ggplot</span>(disease_data, <span class="fu">aes</span>(<span class="at">x =</span> disease, <span class="at">y =</span> Frequency)) <span class="sc">+</span></span>
+<span id="cb46-14"><a href="#cb46-14"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb46-15"><a href="#cb46-15"></a>  <span class="fu">ggtitle</span>(<span class="st">"Frequency of Disease Categories"</span>) <span class="sc">+</span></span>
+<span id="cb46-16"><a href="#cb46-16"></a>  <span class="fu">xlab</span>(<span class="st">"Disease Category"</span>) <span class="sc">+</span></span>
+<span id="cb46-17"><a href="#cb46-17"></a>  <span class="fu">ylab</span>(<span class="st">"Frequency"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 </div>
-<img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-19-1.png" width="960" class="r-stretch"></section></section>
+<img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section></section>
 <section id="bar-chart-3" class="title-slide slide level1 center">
 <h1>Bar chart</h1>
 <ul>
@@ -991,37 +1011,48 @@ Dr.&nbsp;Floris van Ogtrop
 <section id="strip-chart" class="title-slide slide level1 center">
 <h1>Strip chart</h1>
 <ul>
-<li>Often if we have a small data set (1-5 data points), we can use a stripchart to visualise our data. We will demonstrate using our soil carbon dataset.</li>
+<li>Often if we have a small data set (1-5 data points), we can use a stripchart to visualise our data. We will demonstrate using our soil carbon data set.</li>
 <li>What do we notice from the plot?</li>
 </ul>
+<div class="columns">
+<div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1"></a><span class="co"># Load necessary library</span></span>
-<span id="cb46-2"><a href="#cb46-2"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb46-3"><a href="#cb46-3"></a></span>
-<span id="cb46-4"><a href="#cb46-4"></a><span class="co"># Your data</span></span>
-<span id="cb46-5"><a href="#cb46-5"></a>soil_c <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">48</span>, <span class="dv">56</span>, <span class="dv">8</span>, <span class="dv">86</span>, <span class="dv">90</span>, <span class="dv">271</span>)</span>
-<span id="cb46-6"><a href="#cb46-6"></a></span>
-<span id="cb46-7"><a href="#cb46-7"></a><span class="co"># Convert to a data frame</span></span>
-<span id="cb46-8"><a href="#cb46-8"></a>soil_c_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Value =</span> soil_c)</span>
-<span id="cb46-9"><a href="#cb46-9"></a></span>
-<span id="cb46-10"><a href="#cb46-10"></a><span class="co"># Create the strip chart</span></span>
-<span id="cb46-11"><a href="#cb46-11"></a><span class="fu">ggplot</span>(soil_c_df, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> Value)) <span class="sc">+</span></span>
-<span id="cb46-12"><a href="#cb46-12"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
-<span id="cb46-13"><a href="#cb46-13"></a>  <span class="fu">ggtitle</span>(<span class="st">"Strip chart of soil carbon"</span>) <span class="sc">+</span></span>
-<span id="cb46-14"><a href="#cb46-14"></a>  <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb46-15"><a href="#cb46-15"></a>  <span class="fu">ylab</span>(<span class="st">"Soil carbon (t/ha)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a><span class="co"># Load necessary library</span></span>
+<span id="cb47-2"><a href="#cb47-2"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb47-3"><a href="#cb47-3"></a></span>
+<span id="cb47-4"><a href="#cb47-4"></a><span class="co"># Your data</span></span>
+<span id="cb47-5"><a href="#cb47-5"></a>soil_c <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">48</span>, <span class="dv">56</span>, <span class="dv">8</span>, <span class="dv">86</span>, <span class="dv">90</span>, <span class="dv">271</span>)</span>
+<span id="cb47-6"><a href="#cb47-6"></a></span>
+<span id="cb47-7"><a href="#cb47-7"></a><span class="co"># Convert to a data frame</span></span>
+<span id="cb47-8"><a href="#cb47-8"></a>soil_c_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Value =</span> soil_c)</span>
+<span id="cb47-9"><a href="#cb47-9"></a></span>
+<span id="cb47-10"><a href="#cb47-10"></a><span class="co"># Create the strip chart</span></span>
+<span id="cb47-11"><a href="#cb47-11"></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(soil_c_df, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> Value)) <span class="sc">+</span></span>
+<span id="cb47-12"><a href="#cb47-12"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb47-13"><a href="#cb47-13"></a>  <span class="fu">ggtitle</span>(<span class="st">"Strip chart of soil carbon"</span>) <span class="sc">+</span></span>
+<span id="cb47-14"><a href="#cb47-14"></a>  <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb47-15"><a href="#cb47-15"></a>  <span class="fu">ylab</span>(<span class="st">"Soil carbon (t/ha)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1"></a><span class="fu">print</span>(p)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-22-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
 
 <section id="boxplot" class="title-slide slide level1 center">
 <h1>Boxplot</h1>
 <ul>
 <li>We can overlay our strip chart with a boxplot. This shows use the min/max, quartiles and median and can also show outliers.</li>
 <li>We generally use boxplots when we have more than 5 data points.</li>
+<li>See lecture notes for creating boxplot by hand.</li>
 </ul>
 
-<img data-src="images/L2_Boxplot.png" class="r-stretch"></section>
+<img data-src="images/L2_Boxplot.jpg" class="r-stretch quarto-figure-center"><p class="caption">Nicholas 1999</p></section>
 
 <section id="boxplot-1" class="title-slide slide level1 center">
 <h1>Boxplot</h1>
@@ -1029,43 +1060,52 @@ Dr.&nbsp;Floris van Ogtrop
 <li>Here is a slightly larger data set from a trial where creeping bentgrass turf was laid in an experiment to assess root growth. Eighty (80) “plugs” were randomly sampled 4 weeks after laying. Root growth was measured by averaging the length (mm) of the ten longest roots in each plug.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a>root_length <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">108</span>, <span class="dv">102</span>, <span class="dv">100</span>, <span class="dv">135</span>, <span class="dv">113</span>, <span class="dv">109</span>, <span class="dv">92</span>, <span class="dv">97</span>, <span class="dv">73</span>, <span class="dv">65</span>,</span>
-<span id="cb47-2"><a href="#cb47-2"></a><span class="dv">68</span>, <span class="dv">74</span>, <span class="dv">93</span>, <span class="dv">97</span>, <span class="dv">118</span>, <span class="dv">121</span>, <span class="dv">103</span>, <span class="dv">99</span>, <span class="dv">90</span>, <span class="dv">90</span>,</span>
-<span id="cb47-3"><a href="#cb47-3"></a><span class="dv">99</span>, <span class="dv">102</span>, <span class="dv">106</span>, <span class="dv">90</span>, <span class="dv">92</span>, <span class="dv">97</span>, <span class="dv">100</span>, <span class="dv">92</span>, <span class="dv">80</span>, <span class="dv">99</span>,</span>
-<span id="cb47-4"><a href="#cb47-4"></a><span class="dv">103</span>, <span class="dv">103</span>, <span class="dv">115</span>, <span class="dv">85</span>, <span class="dv">96</span>, <span class="dv">86</span>, <span class="dv">85</span>, <span class="dv">86</span>, <span class="dv">91</span>, <span class="dv">90</span>,</span>
-<span id="cb47-5"><a href="#cb47-5"></a><span class="dv">94</span>, <span class="dv">93</span>, <span class="dv">93</span>, <span class="dv">99</span>, <span class="dv">109</span>, <span class="dv">115</span>, <span class="dv">110</span>, <span class="dv">94</span>, <span class="dv">107</span>, <span class="dv">88</span>,</span>
-<span id="cb47-6"><a href="#cb47-6"></a><span class="dv">101</span>, <span class="dv">89</span>, <span class="dv">117</span>, <span class="dv">91</span>, <span class="dv">112</span>, <span class="dv">101</span>, <span class="dv">91</span>, <span class="dv">81</span>, <span class="dv">80</span>, <span class="dv">67</span>,</span>
-<span id="cb47-7"><a href="#cb47-7"></a><span class="dv">69</span>, <span class="dv">80</span>, <span class="dv">86</span>, <span class="dv">81</span>, <span class="dv">65</span>, <span class="dv">90</span>, <span class="dv">99</span>, <span class="dv">93</span>, <span class="dv">90</span>, <span class="dv">102</span>,</span>
-<span id="cb47-8"><a href="#cb47-8"></a><span class="dv">72</span>, <span class="dv">70</span>, <span class="dv">90</span>, <span class="dv">90</span>, <span class="dv">87</span>, <span class="dv">89</span>, <span class="dv">90</span>, <span class="dv">96</span>, <span class="dv">108</span>, <span class="dv">86</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1"></a>root_length <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">108</span>, <span class="dv">102</span>, <span class="dv">100</span>, <span class="dv">135</span>, <span class="dv">113</span>, <span class="dv">109</span>, <span class="dv">92</span>, <span class="dv">97</span>, <span class="dv">73</span>, <span class="dv">65</span>,</span>
+<span id="cb49-2"><a href="#cb49-2"></a><span class="dv">68</span>, <span class="dv">74</span>, <span class="dv">93</span>, <span class="dv">97</span>, <span class="dv">118</span>, <span class="dv">121</span>, <span class="dv">103</span>, <span class="dv">99</span>, <span class="dv">90</span>, <span class="dv">90</span>,</span>
+<span id="cb49-3"><a href="#cb49-3"></a><span class="dv">99</span>, <span class="dv">102</span>, <span class="dv">106</span>, <span class="dv">90</span>, <span class="dv">92</span>, <span class="dv">97</span>, <span class="dv">100</span>, <span class="dv">92</span>, <span class="dv">80</span>, <span class="dv">99</span>,</span>
+<span id="cb49-4"><a href="#cb49-4"></a><span class="dv">103</span>, <span class="dv">103</span>, <span class="dv">115</span>, <span class="dv">85</span>, <span class="dv">96</span>, <span class="dv">86</span>, <span class="dv">85</span>, <span class="dv">86</span>, <span class="dv">91</span>, <span class="dv">90</span>,</span>
+<span id="cb49-5"><a href="#cb49-5"></a><span class="dv">94</span>, <span class="dv">93</span>, <span class="dv">93</span>, <span class="dv">99</span>, <span class="dv">109</span>, <span class="dv">115</span>, <span class="dv">110</span>, <span class="dv">94</span>, <span class="dv">107</span>, <span class="dv">88</span>,</span>
+<span id="cb49-6"><a href="#cb49-6"></a><span class="dv">101</span>, <span class="dv">89</span>, <span class="dv">117</span>, <span class="dv">91</span>, <span class="dv">112</span>, <span class="dv">101</span>, <span class="dv">91</span>, <span class="dv">81</span>, <span class="dv">80</span>, <span class="dv">67</span>,</span>
+<span id="cb49-7"><a href="#cb49-7"></a><span class="dv">69</span>, <span class="dv">80</span>, <span class="dv">86</span>, <span class="dv">81</span>, <span class="dv">65</span>, <span class="dv">90</span>, <span class="dv">99</span>, <span class="dv">93</span>, <span class="dv">90</span>, <span class="dv">102</span>,</span>
+<span id="cb49-8"><a href="#cb49-8"></a><span class="dv">72</span>, <span class="dv">70</span>, <span class="dv">90</span>, <span class="dv">90</span>, <span class="dv">87</span>, <span class="dv">89</span>, <span class="dv">90</span>, <span class="dv">96</span>, <span class="dv">108</span>, <span class="dv">86</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 
 <section id="boxplot-2" class="title-slide slide level1 center">
 <h1>Boxplot</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>The follow produces a boxplot and also includes the jittered data points (red coloured)</li>
 <li>Note that there is on outlier which is the black data pointat the top of the plot</li>
 </ul>
+</div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1"></a><span class="co"># Load necessary library</span></span>
-<span id="cb48-2"><a href="#cb48-2"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb48-3"><a href="#cb48-3"></a></span>
-<span id="cb48-4"><a href="#cb48-4"></a><span class="co"># Convert to a data frame</span></span>
-<span id="cb48-5"><a href="#cb48-5"></a>root_length_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Value =</span> root_length)</span>
-<span id="cb48-6"><a href="#cb48-6"></a></span>
-<span id="cb48-7"><a href="#cb48-7"></a><span class="co"># Create the strip chart</span></span>
-<span id="cb48-8"><a href="#cb48-8"></a><span class="fu">ggplot</span>(root_length_df, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> Value)) <span class="sc">+</span></span>
-<span id="cb48-9"><a href="#cb48-9"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
-<span id="cb48-10"><a href="#cb48-10"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="fl">0.1</span>, <span class="at">col =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
-<span id="cb48-11"><a href="#cb48-11"></a>  <span class="fu">ggtitle</span>(<span class="st">"Boxplot of root length in bentgrass"</span>) <span class="sc">+</span></span>
-<span id="cb48-12"><a href="#cb48-12"></a>  <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
-<span id="cb48-13"><a href="#cb48-13"></a>  <span class="fu">ylab</span>(<span class="st">"Root length (mm)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1"></a><span class="co"># Load necessary library</span></span>
+<span id="cb50-2"><a href="#cb50-2"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb50-3"><a href="#cb50-3"></a></span>
+<span id="cb50-4"><a href="#cb50-4"></a><span class="co"># Convert to a data frame</span></span>
+<span id="cb50-5"><a href="#cb50-5"></a>root_length_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Value =</span> root_length)</span>
+<span id="cb50-6"><a href="#cb50-6"></a></span>
+<span id="cb50-7"><a href="#cb50-7"></a><span class="co"># Create the strip chart</span></span>
+<span id="cb50-8"><a href="#cb50-8"></a><span class="fu">ggplot</span>(root_length_df, <span class="fu">aes</span>(<span class="at">x =</span> <span class="st">""</span>, <span class="at">y =</span> Value)) <span class="sc">+</span></span>
+<span id="cb50-9"><a href="#cb50-9"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb50-10"><a href="#cb50-10"></a>  <span class="fu">geom_jitter</span>(<span class="at">width =</span> <span class="fl">0.1</span>, <span class="at">col =</span> <span class="st">"red"</span>) <span class="sc">+</span></span>
+<span id="cb50-11"><a href="#cb50-11"></a>  <span class="fu">ggtitle</span>(<span class="st">"Boxplot of root length in bentgrass"</span>) <span class="sc">+</span></span>
+<span id="cb50-12"><a href="#cb50-12"></a>  <span class="fu">xlab</span>(<span class="st">""</span>) <span class="sc">+</span></span>
+<span id="cb50-13"><a href="#cb50-13"></a>  <span class="fu">ylab</span>(<span class="st">"Root length (mm)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-24-1.png" width="960"></p>
 </div>
-<img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-22-1.png" width="960" class="r-stretch"></section>
+</div>
+</div>
+</div>
+</section>
 
 <section id="histogram" class="title-slide slide level1 center">
 <h1>Histogram</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>Based on frequency table
 <ul>
@@ -1073,21 +1113,26 @@ Dr.&nbsp;Floris van Ogtrop
 <li>We can use histograms to describe the shape of distributions for continuous data sets that are larger than 20 data points.</li>
 </ul></li>
 </ul>
+</div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1"></a><span class="co"># Load necessary library</span></span>
-<span id="cb49-2"><a href="#cb49-2"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb49-3"><a href="#cb49-3"></a></span>
-<span id="cb49-4"><a href="#cb49-4"></a><span class="co"># Convert to a data frame</span></span>
-<span id="cb49-5"><a href="#cb49-5"></a>root_length_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Value =</span> root_length)</span>
-<span id="cb49-6"><a href="#cb49-6"></a></span>
-<span id="cb49-7"><a href="#cb49-7"></a><span class="co"># Create the strip chart</span></span>
-<span id="cb49-8"><a href="#cb49-8"></a><span class="fu">ggplot</span>(root_length_df, <span class="fu">aes</span>(Value)) <span class="sc">+</span></span>
-<span id="cb49-9"><a href="#cb49-9"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
-<span id="cb49-10"><a href="#cb49-10"></a>  <span class="fu">ggtitle</span>(<span class="st">"Boxplot of root length in bentgrass"</span>) <span class="sc">+</span></span>
-<span id="cb49-11"><a href="#cb49-11"></a>  <span class="fu">xlab</span>(<span class="st">"Root length (mm)"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1"></a><span class="co"># Load necessary library</span></span>
+<span id="cb51-2"><a href="#cb51-2"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb51-3"><a href="#cb51-3"></a></span>
+<span id="cb51-4"><a href="#cb51-4"></a><span class="co"># Convert to a data frame</span></span>
+<span id="cb51-5"><a href="#cb51-5"></a>root_length_df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Value =</span> root_length)</span>
+<span id="cb51-6"><a href="#cb51-6"></a></span>
+<span id="cb51-7"><a href="#cb51-7"></a><span class="co"># Create the strip chart</span></span>
+<span id="cb51-8"><a href="#cb51-8"></a><span class="fu">ggplot</span>(root_length_df, <span class="fu">aes</span>(Value)) <span class="sc">+</span></span>
+<span id="cb51-9"><a href="#cb51-9"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb51-10"><a href="#cb51-10"></a>  <span class="fu">ggtitle</span>(<span class="st">"Boxplot of root length in bentgrass"</span>) <span class="sc">+</span></span>
+<span id="cb51-11"><a href="#cb51-11"></a>  <span class="fu">xlab</span>(<span class="st">"Root length (mm)"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-25-1.png" width="960"></p>
 </div>
-<img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-23-1.png" width="960" class="r-stretch"></section>
+</div>
+</div>
+</div>
+</section>
 
 <section id="summary" class="title-slide slide level1 center">
 <h1>Summary</h1>
@@ -1095,7 +1140,7 @@ Dr.&nbsp;Floris van Ogtrop
 <li>The following is a rough guide for plotting <em>continuous</em> data</li>
 </ul>
 
-<img data-src="images/L2_WhichPlot?.png" class="r-stretch"><ul>
+<img data-src="images/L2_WhichPlot.png" class="r-stretch"><ul>
 <li>Remember for <em>categorical</em> data we use <strong>Tables</strong> and <strong>Bar Charts</strong></li>
 </ul>
 </section>
@@ -1111,11 +1156,11 @@ Dr.&nbsp;Floris van Ogtrop
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1"></a><span class="fu">mean</span>(soil_c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1"></a><span class="fu">mean</span>(soil_c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 93.16667</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1"></a><span class="fu">median</span>(soil_c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1"></a><span class="fu">median</span>(soil_c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 71</code></pre>
 </div>
@@ -1127,28 +1172,35 @@ Dr.&nbsp;Floris van Ogtrop
 
 <section id="symmetry-1" class="title-slide slide level1 center">
 <h1>Symmetry</h1>
+<div class="columns">
+<div class="column" style="width:50%;">
 <ul>
 <li>For larger data sets, we can look at the mean, median and the histogram to determine if it is symmetrical.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1"></a><span class="fu">mean</span>(root_length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">mean</span>(root_length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 93.8625</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a><span class="fu">median</span>(root_length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1"></a><span class="fu">median</span>(root_length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 93</code></pre>
 </div>
 </div>
+</div><div class="column" style="width:50%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1"></a><span class="co"># Create the strip chart</span></span>
-<span id="cb58-2"><a href="#cb58-2"></a><span class="fu">ggplot</span>(root_length_df, <span class="fu">aes</span>(Value)) <span class="sc">+</span></span>
-<span id="cb58-3"><a href="#cb58-3"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
-<span id="cb58-4"><a href="#cb58-4"></a>  <span class="fu">ggtitle</span>(<span class="st">"Boxplot of root length in bentgrass"</span>) <span class="sc">+</span></span>
-<span id="cb58-5"><a href="#cb58-5"></a>  <span class="fu">xlab</span>(<span class="st">"Root length (mm)"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1"></a><span class="co"># Create the strip chart</span></span>
+<span id="cb60-2"><a href="#cb60-2"></a><span class="fu">ggplot</span>(root_length_df, <span class="fu">aes</span>(Value)) <span class="sc">+</span></span>
+<span id="cb60-3"><a href="#cb60-3"></a>  <span class="fu">geom_histogram</span>() <span class="sc">+</span></span>
+<span id="cb60-4"><a href="#cb60-4"></a>  <span class="fu">ggtitle</span>(<span class="st">"Boxplot of root length in bentgrass"</span>) <span class="sc">+</span></span>
+<span id="cb60-5"><a href="#cb60-5"></a>  <span class="fu">xlab</span>(<span class="st">"Root length (mm)"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-28-1.png" width="960"></p>
 </div>
-<img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-26-1.png" width="960" class="r-stretch"></section>
+</div>
+</div>
+</div>
+</section>
 
 <section id="symmetry-2" class="title-slide slide level1 center">
 <h1>Symmetry</h1>
@@ -1160,8 +1212,8 @@ Dr.&nbsp;Floris van Ogtrop
 <li>in RStudio, we can use the <code>skewness</code> function found in the <code>e1071</code> package</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1"></a><span class="fu">library</span>(e1071)</span>
-<span id="cb59-2"><a href="#cb59-2"></a><span class="fu">skewness</span>(root_length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1"></a><span class="fu">library</span>(e1071)</span>
+<span id="cb61-2"><a href="#cb61-2"></a><span class="fu">skewness</span>(root_length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 0.08316635</code></pre>
 </div>

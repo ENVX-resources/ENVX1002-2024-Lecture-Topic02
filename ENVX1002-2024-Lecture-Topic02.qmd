@@ -448,18 +448,23 @@ print(cv_n)
   - Example:  48, 56, 8, 86, 90, 27
   - Example: 48, 56, 8, 86, 90, 271
 
+:::: {.columns}
+::: {.column width="50%"}
 mean - $\overline{y}$: 
 ```{r}
 mean(c(48, 56, 8, 86, 90, 27))
 mean(c(48, 56, 8, 86, 90, 271))
 ```
+:::
 
+::: {.column width="50%"}
 median - $\tilde{y}$: 
 ```{r}
 median(c(48, 56, 8, 86, 90, 27))
 median(c(48, 56, 8, 86, 90, 271))
 ```
-
+:::
+::::
 
 
 
@@ -471,18 +476,23 @@ median(c(48, 56, 8, 86, 90, 271))
   - Example:  48, 56, 8, 86, 90, 27
   - Example: 48, 56, 8, 86, 90, 271
 
+:::: {.columns}
+::: {.column width="50%"}
 variance - $s$: 
 ```{r}
 var(c(48, 56, 8, 86, 90, 27))
 var(c(48, 56, 8, 86, 90, 271))
 ```
+:::
 
+::: {.column width="50%"}
 Inter quartile range - $IQR$: 
 ```{r}
 IQR(c(48, 56, 8, 86, 90, 27))
 IQR(c(48, 56, 8, 86, 90, 271))
 ```
-
+:::
+::::
 
 
 
@@ -545,6 +555,8 @@ print(disease_tbl)
 
 # Bar chart
 
+:::: {.columns}
+::: {.column width="50%"}
 - We then plot the table in ggplot
 
 ```{r}
@@ -555,14 +567,21 @@ disease_df <- as.data.frame(disease_tbl)
 names(disease_df) <- c("Disease", "Frequency")
 
 # Create the bar plot
-ggplot(disease_df, aes(x = Disease, y = Frequency)) +
+p <- ggplot(disease_df, aes(x = Disease, y = Frequency)) +
   geom_bar(stat = "identity") +
   ggtitle("Frequency of Disease Categories") +
   xlab("Disease Category") +
   ylab("Frequency")
 ```
 
+:::
+::: {.column width="50%"}
 
+```{r}
+print(p)
+```
+:::
+::::
 
 
 
@@ -599,8 +618,7 @@ ggplot(disease_data, aes(x = disease, y = Frequency)) +
 
 - NOTE: Bar charts should generally not used for continuous numerical data
 
-![Source: Weissgerber at al. (2015)](images/L2_NoBar.png)
-
+![Source: Weissgerber at al. (2015)](images/L2_NoBar.png) 
 
 
 
@@ -608,8 +626,11 @@ ggplot(disease_data, aes(x = disease, y = Frequency)) +
 
 # Strip chart
 
-- Often if we have a small data set (1-5 data points), we can use a stripchart to visualise our data. We will demonstrate using our soil carbon dataset.
+- Often if we have a small data set (1-5 data points), we can use a stripchart to visualise our data. We will demonstrate using our soil carbon data set.
 - What do we notice from the plot?
+
+:::: {.columns}
+::: {.column width="50%"}
 
 ```{r}
 # Load necessary library
@@ -622,14 +643,23 @@ soil_c <- c(48, 56, 8, 86, 90, 271)
 soil_c_df <- data.frame(Value = soil_c)
 
 # Create the strip chart
-ggplot(soil_c_df, aes(x = "", y = Value)) +
+p <- ggplot(soil_c_df, aes(x = "", y = Value)) +
   geom_jitter(width = 0) +
   ggtitle("Strip chart of soil carbon") +
   xlab("") +
   ylab("Soil carbon (t/ha)")
 ```
 
+:::
+::: {.column width="50%"}
 
+```{r}
+print(p)
+```
+
+:::
+
+::::
 
 
 
@@ -637,9 +667,9 @@ ggplot(soil_c_df, aes(x = "", y = Value)) +
 
 - We can overlay our strip chart with a boxplot. This shows use the min/max, quartiles and median and can also show outliers.
 - We generally use boxplots when we have more than 5 data points.
+- See lecture notes for creating boxplot by hand.
 
-![](images/L2_Boxplot.png)
-
+![Nicholas 1999](images/L2_Boxplot.jpg) 
 
 
 
@@ -665,8 +695,14 @@ root_length <- c(108, 102, 100, 135, 113, 109, 92, 97, 73, 65,
 
 # Boxplot
 
+:::: {.columns}
+::: {.column width="50%"}
+
 - The follow produces a boxplot and also includes the jittered data points (red coloured)
 - Note that there is on outlier which is the black data pointat the top of the plot
+
+:::
+::: {.column width="50%"}
 
 ```{r}
 # Load necessary library
@@ -684,6 +720,8 @@ ggplot(root_length_df, aes(x = "", y = Value)) +
   ylab("Root length (mm)")
 ```
 
+:::
+::::
 
 
 
@@ -691,10 +729,15 @@ ggplot(root_length_df, aes(x = "", y = Value)) +
 
 # Histogram
 
+:::: {.columns}
+::: {.column width="50%"}
 
 - Based on frequency table
   - Height of each bar proportional to frequency - need to group data
   - We can use histograms to describe the shape of distributions for continuous data sets that are larger than 20 data points.
+
+:::
+::: {.column width="50%"}
 
 ```{r}
 # Load necessary library
@@ -710,6 +753,8 @@ ggplot(root_length_df, aes(Value)) +
   xlab("Root length (mm)") 
 ```
 
+:::
+::::
 
 
 
@@ -719,7 +764,7 @@ ggplot(root_length_df, aes(Value)) +
 
 - The following is a rough guide for plotting *continuous* data
 
-![](images/L2_WhichPlot?.png)
+![](images/L2_WhichPlot.png)
 
 - Remember for *categorical* data we use **Tables** and **Bar Charts**
 
@@ -749,12 +794,19 @@ median(soil_c)
 
 # Symmetry
 
+:::: {.columns}
+::: {.column width="50%"}
+
 - For larger data sets, we can look at the mean, median and the histogram to determine if it is symmetrical.
 
 ```{r}
 mean(root_length)
 median(root_length)
 ```
+
+:::
+
+::: {.column width="50%"}
 
 ```{r}
 # Create the strip chart
@@ -764,7 +816,8 @@ ggplot(root_length_df, aes(Value)) +
   xlab("Root length (mm)") 
 ```
 
-
+:::
+::::
 
 
 
