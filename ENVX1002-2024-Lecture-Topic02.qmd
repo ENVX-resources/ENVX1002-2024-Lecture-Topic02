@@ -81,7 +81,7 @@ Before we go calculate averages, we need to think about the difference between p
 - We take a sample from a larger population
 - What information does the sample give about the population and how reliable is that information?
 
-![Source: https://www.omniconvert.com/what-is/sample-size/](images/L2_sample-size-definition.png)
+![bakhtiarzein - https://stock.adobe.com/](images/AdobeStock_166541103.jpeg)
 
 
 
@@ -669,7 +669,7 @@ print(p)
 - We generally use boxplots when we have more than 5 data points.
 - See lecture notes for creating boxplot by hand.
 
-![Nicholas 1999](images/L2_Boxplot.jpg) 
+![Source: Nicholas (1999)](images/L2_Boxplot.jpg) 
 
 
 
