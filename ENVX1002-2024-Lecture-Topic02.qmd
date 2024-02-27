@@ -357,7 +357,7 @@ print(iqr_c)
 
 Population variance: $\sigma^2 = \frac{\sum_{i=1}^{N}(y_i - \mu)^2}{N}$
 
-Sample variance: $s^2 = \frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n}$
+Sample variance: $s^2 = \frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n-1}$
 
 ![](images/R_logo.jpg) - `var(c(48, 56, 78, 86, 90, 271))`
 

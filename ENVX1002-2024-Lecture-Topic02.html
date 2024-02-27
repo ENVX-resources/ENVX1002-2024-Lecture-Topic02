@@ -728,7 +728,7 @@ Dr.&nbsp;Floris van Ogtrop
 <li>Describes variability around the arithmetic mean</li>
 </ul>
 <p>Population variance: <span class="math inline">\sigma^2 = \frac{\sum_{i=1}^{N}(y_i - \mu)^2}{N}</span></p>
-<p>Sample variance: <span class="math inline">s^2 = \frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n}</span></p>
+<p>Sample variance: <span class="math inline">s^2 = \frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n-1}</span></p>
 <p><img data-src="images/R_logo.jpg"> - <code>var(c(48, 56, 78, 86, 90, 271))</code></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>var_c <span class="ot">&lt;-</span> <span class="fu">var</span>(<span class="fu">c</span>(<span class="dv">48</span>, <span class="dv">56</span>, <span class="dv">78</span>, <span class="dv">86</span>, <span class="dv">90</span>, <span class="dv">271</span>))</span>
