@@ -218,7 +218,6 @@ print(mean_c)
 # Centre: Median
 
 - Median is the middle number of a set of ordered observations
-- Population median $M$:  sum of all values of a variable divided by the number of objects in the population;
 
 Population median: $M=\left(\frac{N+1}{2}\right)th$ sorted value
 
@@ -358,7 +357,7 @@ print(iqr_c)
 
 Population variance: $\sigma^2 = \frac{\sum_{i=1}^{N}(y_i - \mu)^2}{N}$
 
-Sample variance: $\s^2 = \frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n}$
+Sample variance: $s^2 = \frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n}$
 
 ![](images/R_logo.jpg) - `var(c(48, 56, 78, 86, 90, 271))`
 
@@ -379,11 +378,11 @@ print(var_c)
 - Describes variability around the **arithmetic mean**
   - Variance is in $units^2$ as it is based on squared deviations from the mean
   - Standard deviation describes variability around the mean in original units
-  - Standard deviation $\sqrt$ of the variance
+  - Standard deviation $\sqrt()$ of the variance
 
-Population standard deviation: $\sigma^2 = \sqrt{\frac{\sum_{i=1}^{N}(y_i - \mu)^2}{N}}$
+Population standard deviation: $\sigma = \sqrt{\frac{\sum_{i=1}^{N}(y_i - \mu)^2}{N}}$
 
-Sample variance: $s^2 = \sqrt{\frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n-1}}$
+Sample standard deviation: $s = \sqrt{\frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n-1}}$
 
 
 
@@ -497,7 +496,20 @@ IQR(c(48, 56, 8, 86, 90, 271))
 
 
 
-# Categorical data
+# Graphical and tabular summaries
+
+- Visualisation of data is useful for identifying
+  - outliers
+  - shape and distribution
+  - communicating results
+  - suggest modelling strategies
+- Bar chart
+- Strip chart
+- Boxplot
+- Histogram
+
+
+# Categorical data - table
 
 - Different types with examples:
   - Binary:  We spray insects and see how many die
@@ -511,25 +523,7 @@ IQR(c(48, 56, 8, 86, 90, 271))
 
 
 
-
-
-# Graphical summaries
-
-- Visualisation of data is useful for identifying
-  - outliers
-  - shape and distribution
-  - communicating results
-  - suggest modelling strategies
-- Bar chart
-- Strip chart
-- Boxplot
-- Histogram
-
-
-
-
-
-# Bar chart
+# Categorical data - Bar chart
 
 - We first tabulate the data 
 
@@ -553,7 +547,7 @@ print(disease_tbl)
 
 
 
-# Bar chart
+# Categorical data - Bar chart
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -585,7 +579,7 @@ print(p)
 
 
 
-## Bar chart
+## Categorical data - Bar chart
 
 - Using `tidyverse`
 
@@ -614,7 +608,7 @@ ggplot(disease_data, aes(x = disease, y = Frequency)) +
 
 
 
-# Bar chart
+# Categorical data - Bar chart
 
 - NOTE: Bar charts should generally not used for continuous numerical data
 
@@ -624,7 +618,7 @@ ggplot(disease_data, aes(x = disease, y = Frequency)) +
 
 
 
-# Strip chart
+# Numerical Data - Strip chart
 
 - Often if we have a small data set (1-5 data points), we can use a stripchart to visualise our data. We will demonstrate using our soil carbon data set.
 - What do we notice from the plot?
@@ -663,7 +657,7 @@ print(p)
 
 
 
-# Boxplot
+# Numerical Data - Boxplot
 
 - We can overlay our strip chart with a boxplot. This shows use the min/max, quartiles and median and can also show outliers.
 - We generally use boxplots when we have more than 5 data points.
@@ -673,7 +667,7 @@ print(p)
 
 
 
-# Boxplot
+# Numerical Data - Boxplot
 
 - Here is a slightly larger data set from a trial where creeping bentgrass turf was laid in an experiment to assess root growth. Eighty (80)
 “plugs” were randomly sampled 4 weeks after laying. Root growth was measured by averaging the length (mm) of the ten longest roots in each plug.
@@ -693,7 +687,7 @@ root_length <- c(108, 102, 100, 135, 113, 109, 92, 97, 73, 65,
 
 
 
-# Boxplot
+# Numerical Data - Boxplot
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -727,7 +721,7 @@ ggplot(root_length_df, aes(x = "", y = Value)) +
 
 
 
-# Histogram
+# Numerical Data - Histogram
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -773,7 +767,7 @@ ggplot(root_length_df, aes(Value)) +
 
 
 
-# Symmetry
+# Numerical Data - Symmetry
 
 - Throughout this unit you will be assessing the shape of distributions, in particular you will be looking at whether the distribution (histogram) of the data is symmetrical in shape;
 - For small data sets, you will generally compare the mean and median; 
@@ -792,7 +786,7 @@ median(soil_c)
 
 
 
-# Symmetry
+# Numerical Data - Symmetry
 
 :::: {.columns}
 ::: {.column width="50%"}
@@ -821,7 +815,7 @@ ggplot(root_length_df, aes(Value)) +
 
 
 
-# Symmetry
+# Numerical Data - Symmetry
 
 - We can also calculate skewness using the following equation 
 
@@ -867,7 +861,7 @@ skewness(root_length)
 
 This presentation is based on the [SOLES Quarto reveal.js template](https://github.com/usyd-soles-edu/soles-revealjs) and is licensed under a [Creative Commons Attribution 4.0 International License][cc-by].
 
-#```{r, echo = FALSE}
+#```{r, echo = FALSE, eval = FALSE}
 #renderthis::to_pdf("ENVX1002-2024-Lecture-Topic02.html")
 #```
 
