@@ -618,7 +618,6 @@ Dr.&nbsp;Floris van Ogtrop
 <h1>Centre: Median</h1>
 <ul>
 <li>Median is the middle number of a set of ordered observations</li>
-<li>Population median <span class="math inline">M</span>: sum of all values of a variable divided by the number of objects in the population;</li>
 </ul>
 <p>Population median: <span class="math inline">M=\left(\frac{N+1}{2}\right)th</span> sorted value</p>
 <p>Sample median: <span class="math inline">\tilde{y}=\left(\frac{n+1}{2}\right)th</span> sorted value</p>
@@ -734,7 +733,7 @@ Dr.&nbsp;Floris van Ogtrop
 <li>Describes variability around the arithmetic mean</li>
 </ul>
 <p>Population variance: <span class="math inline">\sigma^2 = \frac{\sum_{i=1}^{N}(y_i - \mu)^2}{N}</span></p>
-<p>Sample variance: <span class="math inline">\s^2 = \frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n}</span></p>
+<p>Sample variance: <span class="math inline">s^2 = \frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n}</span></p>
 <p><img data-src="images/R_logo.jpg"> - <code>var(c(48, 56, 78, 86, 90, 271))</code></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href=""></a>var_c <span class="ot">&lt;-</span> <span class="fu">var</span>(<span class="fu">c</span>(<span class="dv">48</span>, <span class="dv">56</span>, <span class="dv">78</span>, <span class="dv">86</span>, <span class="dv">90</span>, <span class="dv">271</span>))</span>
@@ -753,11 +752,11 @@ Dr.&nbsp;Floris van Ogtrop
 <ul>
 <li>Variance is in <span class="math inline">units^2</span> as it is based on squared deviations from the mean</li>
 <li>Standard deviation describes variability around the mean in original units</li>
-<li>Standard deviation <span class="math inline">\sqrt</span> of the variance</li>
+<li>Standard deviation <span class="math inline">\sqrt()</span> of the variance</li>
 </ul></li>
 </ul>
-<p>Population standard deviation: <span class="math inline">\sigma^2 = \sqrt{\frac{\sum_{i=1}^{N}(y_i - \mu)^2}{N}}</span></p>
-<p>Sample variance: <span class="math inline">s^2 = \sqrt{\frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n-1}}</span></p>
+<p>Population standard deviation: <span class="math inline">\sigma = \sqrt{\frac{\sum_{i=1}^{N}(y_i - \mu)^2}{N}}</span></p>
+<p>Sample standard deviation: <span class="math inline">s = \sqrt{\frac{\sum_{i=1}^{n}(y_i - \overline{y})^2}{n-1}}</span></p>
 </section>
 
 <section id="spread-standard-deviation-1" class="title-slide slide level1 center">
@@ -887,25 +886,8 @@ Dr.&nbsp;Floris van Ogtrop
 </div>
 </section>
 
-<section id="categorical-data" class="title-slide slide level1 center">
-<h1>Categorical data</h1>
-<ul>
-<li>Different types with examples:
-<ul>
-<li>Binary: We spray insects and see how many die</li>
-<li>Nominal: We count how animals, and their species, are in a forest</li>
-<li>Ordinal: Different disease levels for a plant, no disease, moderate, severe</li>
-</ul></li>
-<li>We can count the number observations belonging to each class, called frequency, f.
-<ul>
-<li>Can present as a frequency table</li>
-</ul></li>
-</ul>
-
-<img data-src="images/L2_PlantDisease.png" class="r-stretch"></section>
-
-<section id="graphical-summaries" class="title-slide slide level1 center">
-<h1>Graphical summaries</h1>
+<section id="graphical-and-tabular-summaries" class="title-slide slide level1 center">
+<h1>Graphical and tabular summaries</h1>
 <ul>
 <li>Visualisation of data is useful for identifying
 <ul>
@@ -921,8 +903,25 @@ Dr.&nbsp;Floris van Ogtrop
 </ul>
 </section>
 
-<section id="bar-chart" class="title-slide slide level1 center">
-<h1>Bar chart</h1>
+<section id="categorical-data---table" class="title-slide slide level1 center">
+<h1>Categorical data - table</h1>
+<ul>
+<li>Different types with examples:
+<ul>
+<li>Binary: We spray insects and see how many die</li>
+<li>Nominal: We count how animals, and their species, are in a forest</li>
+<li>Ordinal: Different disease levels for a plant, no disease, moderate, severe</li>
+</ul></li>
+<li>We can count the number observations belonging to each class, called frequency, f.
+<ul>
+<li>Can present as a frequency table</li>
+</ul></li>
+</ul>
+
+<img data-src="images/L2_PlantDisease.png" class="r-stretch"></section>
+
+<section id="categorical-data---bar-chart" class="title-slide slide level1 center">
+<h1>Categorical data - Bar chart</h1>
 <ul>
 <li>We first tabulate the data</li>
 </ul>
@@ -948,8 +947,8 @@ Dr.&nbsp;Floris van Ogtrop
 </section>
 
 <section>
-<section id="bar-chart-1" class="title-slide slide level1 center">
-<h1>Bar chart</h1>
+<section id="categorical-data---bar-chart-1" class="title-slide slide level1 center">
+<h1>Categorical data - Bar chart</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -983,8 +982,8 @@ Dr.&nbsp;Floris van Ogtrop
 </div>
 </div>
 </section>
-<section id="bar-chart-2" class="slide level2">
-<h2>Bar chart</h2>
+<section id="categorical-data---bar-chart-2" class="slide level2">
+<h2>Categorical data - Bar chart</h2>
 <ul>
 <li>Using <code>tidyverse</code></li>
 </ul>
@@ -1009,16 +1008,16 @@ Dr.&nbsp;Floris van Ogtrop
 
 </div>
 <img data-src="ENVX1002-2024-Lecture-Topic02_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section></section>
-<section id="bar-chart-3" class="title-slide slide level1 center">
-<h1>Bar chart</h1>
+<section id="categorical-data---bar-chart-3" class="title-slide slide level1 center">
+<h1>Categorical data - Bar chart</h1>
 <ul>
 <li>NOTE: Bar charts should generally not used for continuous numerical data</li>
 </ul>
 
 <img data-src="images/L2_NoBar.png" class="r-stretch quarto-figure-center"><p class="caption">Source: Weissgerber at al.&nbsp;(2015)</p></section>
 
-<section id="strip-chart" class="title-slide slide level1 center">
-<h1>Strip chart</h1>
+<section id="numerical-data---strip-chart" class="title-slide slide level1 center">
+<h1>Numerical Data - Strip chart</h1>
 <ul>
 <li>Often if we have a small data set (1-5 data points), we can use a stripchart to visualise our data. We will demonstrate using our soil carbon data set.</li>
 <li>What do we notice from the plot?</li>
@@ -1057,8 +1056,8 @@ Dr.&nbsp;Floris van Ogtrop
 </div>
 </section>
 
-<section id="boxplot" class="title-slide slide level1 center">
-<h1>Boxplot</h1>
+<section id="numerical-data---boxplot" class="title-slide slide level1 center">
+<h1>Numerical Data - Boxplot</h1>
 <ul>
 <li>We can overlay our strip chart with a boxplot. This shows use the min/max, quartiles and median and can also show outliers.</li>
 <li>We generally use boxplots when we have more than 5 data points.</li>
@@ -1067,8 +1066,8 @@ Dr.&nbsp;Floris van Ogtrop
 
 <img data-src="images/L2_Boxplot.jpg" class="r-stretch quarto-figure-center"><p class="caption">Source: Nicholas (1999)</p></section>
 
-<section id="boxplot-1" class="title-slide slide level1 center">
-<h1>Boxplot</h1>
+<section id="numerical-data---boxplot-1" class="title-slide slide level1 center">
+<h1>Numerical Data - Boxplot</h1>
 <ul>
 <li>Here is a slightly larger data set from a trial where creeping bentgrass turf was laid in an experiment to assess root growth. Eighty (80) “plugs” were randomly sampled 4 weeks after laying. Root growth was measured by averaging the length (mm) of the ten longest roots in each plug.</li>
 </ul>
@@ -1084,8 +1083,8 @@ Dr.&nbsp;Floris van Ogtrop
 </div>
 </section>
 
-<section id="boxplot-2" class="title-slide slide level1 center">
-<h1>Boxplot</h1>
+<section id="numerical-data---boxplot-2" class="title-slide slide level1 center">
+<h1>Numerical Data - Boxplot</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -1119,8 +1118,8 @@ Dr.&nbsp;Floris van Ogtrop
 </div>
 </section>
 
-<section id="histogram" class="title-slide slide level1 center">
-<h1>Histogram</h1>
+<section id="numerical-data---histogram" class="title-slide slide level1 center">
+<h1>Numerical Data - Histogram</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -1166,8 +1165,8 @@ Dr.&nbsp;Floris van Ogtrop
 </ul>
 </section>
 
-<section id="symmetry" class="title-slide slide level1 center">
-<h1>Symmetry</h1>
+<section id="numerical-data---symmetry" class="title-slide slide level1 center">
+<h1>Numerical Data - Symmetry</h1>
 <ul>
 <li>Throughout this unit you will be assessing the shape of distributions, in particular you will be looking at whether the distribution (histogram) of the data is symmetrical in shape;</li>
 <li>For small data sets, you will generally compare the mean and median;
@@ -1191,8 +1190,8 @@ Dr.&nbsp;Floris van Ogtrop
 </ul>
 </section>
 
-<section id="symmetry-1" class="title-slide slide level1 center">
-<h1>Symmetry</h1>
+<section id="numerical-data---symmetry-1" class="title-slide slide level1 center">
+<h1>Numerical Data - Symmetry</h1>
 <div class="columns">
 <div class="column" style="width:50%;">
 <ul>
@@ -1227,8 +1226,8 @@ Dr.&nbsp;Floris van Ogtrop
 </div>
 </section>
 
-<section id="symmetry-2" class="title-slide slide level1 center">
-<h1>Symmetry</h1>
+<section id="numerical-data---symmetry-2" class="title-slide slide level1 center">
+<h1>Numerical Data - Symmetry</h1>
 <ul>
 <li>We can also calculate skewness using the following equation</li>
 </ul>
@@ -1277,7 +1276,6 @@ Dr.&nbsp;Floris van Ogtrop
 <section id="thanks" class="title-slide slide level1 center">
 <h1>Thanks!</h1>
 <p>This presentation is based on the <a href="https://github.com/usyd-soles-edu/soles-revealjs">SOLES Quarto reveal.js template</a> and is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-<p>#<code>{r, echo = FALSE} #renderthis::to_pdf("ENVX1002-2024-Lecture-Topic02.html") #</code></p>
 <!-- Links -->
 <div class="quarto-auto-generated-content">
 <p><img src="images/usyd_horizontal.svg" class="slide-logo"></p>
